@@ -1,0 +1,22 @@
+# Hardcoded values (No user input required)
+num1 = 15.5
+num2 = 4.0
+operator = '*'  # Change to '+', '-', '*', or '/'
+
+# Calculator logic
+if operator == '+':
+    result = num1 + num2
+elif operator == '-':
+    result = num1 - num2
+elif operator == '*':
+    result = num1 * num2
+elif operator == '/':
+    if num2 != 0:
+        result = num1 / num2
+    else:
+        result = "Error: Division by zero"
+else:
+    result = "Invalid operator"
+
+# Display result
+print(f"{num1} {operator} {num2} = {result}")
